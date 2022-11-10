@@ -14,19 +14,12 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('index')->middleware('verified');
-Route::get('/domain', [HomeController::class, 'domain'])->name('domain')->middleware('verified');
-Route::get('/contact', [HomeController::class, 'contact'])->name('contact')->middleware('verified');
-
-Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
-
-Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
-
-Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
-
-Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
+Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/domain', [HomeController::class, 'domain'])->name('domain');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 
 
-Auth::routes(['verify' => true]);
+
+Auth::routes();
 
