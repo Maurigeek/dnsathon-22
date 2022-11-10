@@ -7,7 +7,9 @@
     "require": {
         "php": "^8.0.2",
         "doctrine/dbal": "^3.5",
+        "fedapay/fedapay-php": "^0.3.12",
         "guzzlehttp/guzzle": "^7.2",
+        "kkiapay/kkiapay-php": "dev-master",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",

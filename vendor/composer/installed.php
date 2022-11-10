@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'f6b92a3313b986e49f11e5f60366becb5403a6b1',
+        'reference' => 'fecbd5c106209d20803b36a979956d21d1816759',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -129,6 +129,15 @@
             'aliases' => array(),
             'reference' => '37f751c67a5372d4e26353bd9384bc03744ec77b',
             'dev_requirement' => true,
+        ),
+        'fedapay/fedapay-php' => array(
+            'pretty_version' => '0.3.12',
+            'version' => '0.3.12.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../fedapay/fedapay-php',
+            'aliases' => array(),
+            'reference' => 'bef5c00efafdee8f8bce885214c25893576510e0',
+            'dev_requirement' => false,
         ),
         'filp/whoops' => array(
             'pretty_version' => '2.14.6',
@@ -385,6 +394,17 @@
                 0 => 'v9.39.0',
             ),
         ),
+        'kkiapay/kkiapay-php' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../kkiapay/kkiapay-php',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => 'b8b5ab30c29e286b0db7c322b5dac7ea639bf73e',
+            'dev_requirement' => false,
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -401,12 +421,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'f6b92a3313b986e49f11e5f60366becb5403a6b1',
+            'reference' => 'fecbd5c106209d20803b36a979956d21d1816759',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(

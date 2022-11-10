@@ -124,6 +124,10 @@ class ComposerStaticInit59ba21c89a3aaf8248c88fd5d8230ff0
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
         ),
+        'K' => 
+        array (
+            'Kkiapay\\' => 8,
+        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -140,6 +144,7 @@ class ComposerStaticInit59ba21c89a3aaf8248c88fd5d8230ff0
         'F' => 
         array (
             'Fruitcake\\Cors\\' => 15,
+            'FedaPay\\' => 8,
             'Faker\\' => 6,
         ),
         'E' => 
@@ -418,6 +423,10 @@ class ComposerStaticInit59ba21c89a3aaf8248c88fd5d8230ff0
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
+        'Kkiapay\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kkiapay/kkiapay-php/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
@@ -451,6 +460,10 @@ class ComposerStaticInit59ba21c89a3aaf8248c88fd5d8230ff0
         'Fruitcake\\Cors\\' => 
         array (
             0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
+        ),
+        'FedaPay\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fedapay/fedapay-php/lib',
         ),
         'Faker\\' => 
         array (
@@ -548,8 +561,10 @@ class ComposerStaticInit59ba21c89a3aaf8248c88fd5d8230ff0
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\PayController' => __DIR__ . '/../..' . '/app/Http/Controllers/PayController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -560,6 +575,7 @@ class ComposerStaticInit59ba21c89a3aaf8248c88fd5d8230ff0
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Contact' => __DIR__ . '/../..' . '/app/Models/Contact.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -1711,6 +1727,41 @@ class ComposerStaticInit59ba21c89a3aaf8248c88fd5d8230ff0
         'Faker\\Provider\\zh_TW\\Text' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/zh_TW/Text.php',
         'Faker\\UniqueGenerator' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/UniqueGenerator.php',
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/ValidGenerator.php',
+        'FedaPay\\Account' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Account.php',
+        'FedaPay\\ApiKey' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiKey.php',
+        'FedaPay\\ApiOperations\\All' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiOperations/All.php',
+        'FedaPay\\ApiOperations\\Create' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiOperations/Create.php',
+        'FedaPay\\ApiOperations\\Delete' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiOperations/Delete.php',
+        'FedaPay\\ApiOperations\\Request' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiOperations/Request.php',
+        'FedaPay\\ApiOperations\\Retrieve' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiOperations/Retrieve.php',
+        'FedaPay\\ApiOperations\\Save' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiOperations/Save.php',
+        'FedaPay\\ApiOperations\\Search' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiOperations/Search.php',
+        'FedaPay\\ApiOperations\\Update' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/ApiOperations/Update.php',
+        'FedaPay\\Balance' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Balance.php',
+        'FedaPay\\Currency' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Currency.php',
+        'FedaPay\\Customer' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Customer.php',
+        'FedaPay\\Error\\ApiConnection' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Error/ApiConnection.php',
+        'FedaPay\\Error\\Base' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Error/Base.php',
+        'FedaPay\\Error\\InvalidRequest' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Error/InvalidRequest.php',
+        'FedaPay\\Error\\SignatureVerification' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Error/SignatureVerification.php',
+        'FedaPay\\Event' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Event.php',
+        'FedaPay\\FedaPay' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/FedaPay.php',
+        'FedaPay\\FedaPayObject' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/FedaPayObject.php',
+        'FedaPay\\HttpClient\\ClientInterface' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/HttpClient/ClientInterface.php',
+        'FedaPay\\HttpClient\\CurlClient' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/HttpClient/CurlClient.php',
+        'FedaPay\\Invoice' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Invoice.php',
+        'FedaPay\\Log' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Log.php',
+        'FedaPay\\Page' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Page.php',
+        'FedaPay\\Payout' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Payout.php',
+        'FedaPay\\PhoneNumber' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/PhoneNumber.php',
+        'FedaPay\\Requestor' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Requestor.php',
+        'FedaPay\\Resource' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Resource.php',
+        'FedaPay\\Transaction' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Transaction.php',
+        'FedaPay\\Util\\Inflector' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Util/Inflector.php',
+        'FedaPay\\Util\\RandomGenerator' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Util/RandomGenerator.php',
+        'FedaPay\\Util\\Util' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Util/Util.php',
+        'FedaPay\\Webhook' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/Webhook.php',
+        'FedaPay\\WebhookSignature' => __DIR__ . '/..' . '/fedapay/fedapay-php/lib/WebhookSignature.php',
         'Fruitcake\\Cors\\CorsService' => __DIR__ . '/..' . '/fruitcake/php-cors/src/CorsService.php',
         'Fruitcake\\Cors\\Exceptions\\InvalidOptionException' => __DIR__ . '/..' . '/fruitcake/php-cors/src/Exceptions/InvalidOptionException.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
@@ -3018,6 +3069,9 @@ class ComposerStaticInit59ba21c89a3aaf8248c88fd5d8230ff0
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'Kkiapay\\Constants' => __DIR__ . '/..' . '/kkiapay/kkiapay-php/src/Constants.php',
+        'Kkiapay\\Kkiapay' => __DIR__ . '/..' . '/kkiapay/kkiapay-php/src/Kkiapay.php',
+        'Kkiapay\\STATUS' => __DIR__ . '/..' . '/kkiapay/kkiapay-php/src/STATUS.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',

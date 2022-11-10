@@ -70,7 +70,29 @@
 						        <td>.com</td>
 						        <td>1 Year</td>
 						        <td>$70.00</td>
-						        <td><button type="button" class="btn btn-secondary">Acheter</button>
+						        <td>	
+						        	<script src="https://cdn.kkiapay.me/k.js"></script>
+											<kkiapay-widget amount="<montant-a-preleve-chez-le-client>"
+												key=""
+												url="<url-vers-votre-logo>"
+												position="center"
+												sandbox="true"
+												data=""
+												callback="<url-de-redirection-quand-lepaiement-est-reuissi>">
+											</kkiapay-widget>
+						        <!-- <form action="{{ route('domaine') }}" method="POST">
+										 <input type="hidden" name="field" value="test">
+										 <script
+										   src="https://cdn.fedapay.com/checkout.js?v=1.1.7"
+										   data-public-key="VOTRE_CLE_API_PUBLIQUE"
+										   data-button-text="Payer 1000"
+										   data-button-class="button-class"
+										   data-transaction-amount="1000"
+										   data-transaction-description="Description de la transaction"
+										   data-currency-iso="XOF">
+										 </script>
+										</form>	 -->
+						        	<button type="button" class="btn btn-secondary">Acheter</button>
 								</td>
 						      </tr>
 						      <tr>
